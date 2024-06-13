@@ -93,8 +93,9 @@ setup(
     install_requires=["numpy", "scipy", "monty", "scikit-learn", "pandas", "pymatgen", "tqdm"],
     extras_requires={
         "maml.apps.symbolic._selectors_cvxpy": ["cvxpy"],
-        "tensorflow": ["tensorflow>=2"],
+        "tensorflow": ["tensorflow>=2,<2.16"],
         "tensorflow with gpu": ["tensorflow-gpu>=2"],
+        "keras": ["keras<3"],
     },
     author="Materials Virtual Lab",
     author_email="ongsp@eng.ucsd.edu",

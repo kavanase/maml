@@ -24,6 +24,7 @@ class M3GNetStructure(BaseDescriber):
         **kwargs,
     ):
         """
+        Note that `keras<3` is required to load the M3GNet model for parsing.
 
         Args:
             model_path (str): m3gnet models path. If no path is provided,
